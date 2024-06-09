@@ -1,2 +1,10 @@
 
 /node_modules
+/.firebase
+/build
+firebase.json
+.firebaserc
+.github/workflows/firebase-hosting-merge.yml
+.github/workflows/firebase-hosting-pull-request.yml
+package-lock.json
+package.json
