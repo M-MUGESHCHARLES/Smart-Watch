@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
+
+.ubuntu-sans {
+    font-family: "Ubuntu Sans", sans-serif;
+}
+
+.urbanist {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 800;
+        font-style: italic;
+        font-size: x-large;
+        color: #78A083 ;
+}
+
+.Roboto {
+    font-family: "Roboto" , sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
