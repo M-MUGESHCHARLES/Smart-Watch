@@ -11,9 +11,6 @@ import FeedBack from "../../sections/feedback/FeedBack";
 import Footer from "../../sections/footer/Footer";
 
 
-
-
-
 export default function HomePage() {
   return (
     <>

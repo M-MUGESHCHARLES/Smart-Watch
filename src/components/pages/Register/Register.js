@@ -9,11 +9,9 @@ import Header2 from "../../sections/header/Header2";
 
 export default function Register() {
   const [activeKey, setActiveKey] = useState("Sign-Up");
-
   return (
     <>
       <Header2 />
-      {/* <div> */}
         <div id="Register">
           <div className="card">
             <Tabs
@@ -35,7 +33,6 @@ export default function Register() {
             <hr />
           </div>
         </div>
-      {/* </div> */}
       <Footer />
     </>
   );
