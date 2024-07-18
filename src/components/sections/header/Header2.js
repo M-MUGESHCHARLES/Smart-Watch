@@ -4,7 +4,7 @@ import BackButton from '../../component/BackButton';
 export default function Header2() {
   return (
     <>
-      <div classNameName="header sticky-top" id="header">
+      <div className="header sticky-top" id="header">
         <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3  border-bottom">
           <div className="col-md-3 mb-2 mb-md-0 text-center">
             <a

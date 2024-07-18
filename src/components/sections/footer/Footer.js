@@ -2,10 +2,10 @@ import React from "react";
 
 function Footer() {
   return (
-    <div>
+    <>
       <div id="footer">
         <footer class="pt-5">
-          <div class="row mb-5">
+          <div class=" row mb-5">
             <div class="col-lg-6 col-md-6 col-sm-12 px-5">
               <div className="row">
                 <div class="col-6 ">
@@ -49,7 +49,7 @@ function Footer() {
                     </li>
                     <li class="nav-item mb-2">
                       <a href="#" class="nav-link p-0 text-secondary">
-                        shipping
+                        Shipping
                       </a>
                     </li>
                     <li class="nav-item mb-2">
@@ -80,7 +80,7 @@ function Footer() {
                   </h5>
                   <p>Monthly digest of what,s new and exciting from us.</p>
                   <div class="d-flex flex-column flex-sm-row w-100 gap-3">
-                    <label for="newsletter1" class="visually-hidden">
+                    <label htmlFor="newsletter1" class="visually-hidden">
                       Email address
                     </label>
                     <input
@@ -128,7 +128,7 @@ function Footer() {
           </div>
         </footer>
       </div>
-    </div>
+    </>
   );
 }
 

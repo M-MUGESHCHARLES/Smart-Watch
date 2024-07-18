@@ -4,7 +4,7 @@ import ShopButton from "../../component/ShopButton";
 
 const header = () => {
   return (
-    <div classNameName="header sticky-top" id="header">
+    <div className="header sticky-top" id="header">
       <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3  border-bottom">
         <div className="col-md-3 mb-2 mb-md-0 text-center">
           <a
@@ -21,11 +21,11 @@ const header = () => {
               Home
             </a>
           </li>
-          <li>
+          {/* <li>
             <a href="#Explore-section" className="nav-link px-2">
-              Shop
+              Explore
             </a>
-          </li>
+          </li> */}
           <li>
             <a href="#features-section" className="nav-link px-2">
               Features

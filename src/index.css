@@ -4,6 +4,10 @@
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
 
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
 .ubuntu-sans {
     font-family: "Ubuntu Sans", sans-serif;
 }
@@ -18,6 +22,22 @@
 
 .Roboto {
     font-family: "Roboto" , sans-serif;
+}
+
+.Cinzel {    
+    font-family: "Cinzel", serif;
+}
+
+.noto-serif {
+  font-family: "Noto Serif", serif;
+}
+
+.fs-smaller {
+    font-size: smaller !important;
+}
+
+.fs-large {
+    font-size: large !important ;
 }
 
 a {
