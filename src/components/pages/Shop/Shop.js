@@ -32,7 +32,7 @@ export default function Shop() {
 
 
 
-  const product_list1 = getRandomElementsFromArray(Product_List, 0, 6);
+  const product_list1 = getRandomElementsFromArray(Product_List, 0, 5);
 
   const product_list2 = getRandomElementsFromArray(Product_List, 5, 10);
     
