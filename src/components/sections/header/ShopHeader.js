@@ -45,7 +45,7 @@ export const ShopHeader = () => {
           <ul className="navbar-nav justify-content-center flex-grow-1 pe-3">
 
             <li className="nav-item">
-              <ScrollToTopLink to='/shop'><button className="nav-link btn"  href="#">Home</button></ScrollToTopLink>
+              <ScrollToTopLink to='/shop'><button className="nav-link btn"  href="#" data-bs-dismiss="offcanvas">Home</button></ScrollToTopLink>
             </li>
 
             <li className="nav-item dropdown">
@@ -66,7 +66,7 @@ export const ShopHeader = () => {
 
                 <li>
                   <ScrollToTopLink to="smart-watches">
-                   <button className="dropdown-item " href="SmartWatches"> <IoWatch  className='fs-4 icon-color me-2' /> &nbsp; Smart Watches </button>
+                   <button className="dropdown-item " href="SmartWatches" data-bs-dismiss="offcanvas"> <IoWatch  className='fs-4 icon-color me-2' /> &nbsp; Smart Watches </button>
                   </ScrollToTopLink> 
                 </li>
                 <li>
@@ -74,21 +74,21 @@ export const ShopHeader = () => {
                 </li>
                 <li>
                   <ScrollToTopLink to="wireless">
-                  <button className="dropdown-item " href="#"> <IoHeadsetSharp  className='fs-4 icon-color me-2' /> &nbsp; Wireless TWS </button></ScrollToTopLink>
+                  <button className="dropdown-item " href="#" data-bs-dismiss="offcanvas"> <IoHeadsetSharp  className='fs-4 icon-color me-2' /> &nbsp; Wireless TWS </button></ScrollToTopLink>
                 </li>
                 <li>
                   <hr className="dropdown-divider w-75 mx-auto"/>
                 </li>
                 <li>
                   <ScrollToTopLink to='sound-bars'>
-                  <button className="dropdown-item " href="#"><MdSpeaker className='fs-4 icon-color me-2' /> &nbsp; Sound bars</button></ScrollToTopLink>
+                  <button className="dropdown-item " href="#" data-bs-dismiss="offcanvas"><MdSpeaker className='fs-4 icon-color me-2' /> &nbsp; Sound bars</button></ScrollToTopLink>
                 </li>
                 <li>
                   <hr className="dropdown-divider w-75 mx-auto"/>
                 </li>
                 <li>
                   <ScrollToTopLink to='accessories'>
-                  <button className="dropdown-item " href="#"> <IoBagAddSharp className='fs-4 icon-color me-2' /> &nbsp; Accessories</button></ScrollToTopLink>
+                  <button className="dropdown-item " href="#" data-bs-dismiss="offcanvas"> <IoBagAddSharp className='fs-4 icon-color me-2' /> &nbsp; Accessories</button></ScrollToTopLink>
                 </li>
               </ul>
 
@@ -96,12 +96,12 @@ export const ShopHeader = () => {
 
             <li className="nav-item">
               <OverlayTrigger trigger="hover" placement="bottom" overlay={popover}>
-                <button className="nav-link "  href="#">Deals</button>
+                <button className="nav-link "  href="#" data-bs-dismiss="offcanvas">Deals</button>
               </OverlayTrigger>                          
             </li>
 
             <li className="nav-item">
-              <button className="nav-link btn" href="#">More</button>
+              <button className="nav-link btn" href="#" data-bs-dismiss="offcanvas">More</button>
             </li>
           </ul>
 
@@ -115,11 +115,11 @@ export const ShopHeader = () => {
           </form>
 
           <div className="col-md-3 text-center header-buttons-div mt-4 mt-lg-0">
-          <span className="me-2">
+          <span className="me-2" data-bs-dismiss="offcanvas">
             <RegisterButton />
           </span>
 
-          <span id="cart">
+          <span id="cart" data-bs-dismiss="offcanvas">
             <CartButton />
           </span>
         </div>
