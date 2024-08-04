@@ -1,7 +1,9 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable jsx-a11y/no-redundant-roles */
-import React from 'react'
-import RegisterButton from '../../component/RegisterButton'
+import React from 'react';
+import RegisterButton from '../../component/RegisterButton';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Popover from 'react-bootstrap/Popover';
+import ScrollToTopLink from '../../component/ScrollToTopLink';
+
 
 // icons
 import { MdSpeaker } from "react-icons/md";
@@ -9,6 +11,12 @@ import { IoBagAddSharp, IoHeadsetSharp, IoWatch,  } from "react-icons/io5";
 import { CartButton } from '../../component/CartButton';
 
 
+const popover = (
+  <Popover id="popover-basic" className="custom-popover">
+    <Popover.Header as="h3"> 😓 OOPS !</Popover.Header>
+    <Popover.Body>No deals available at the moment.</Popover.Body>
+  </Popover>
+);
 
 
 export const ShopHeader = () => {
@@ -19,7 +27,7 @@ export const ShopHeader = () => {
      
     <nav className="navbar navbar-expand-lg py-3" >
     <div className="container-fluid">
-      <a className="text-decoration-none navbar-brand urbanist" href="#">SMART-WATCH</a>
+      <ScrollToTopLink to='/'><a className="text-decoration-none navbar-brand urbanist" href="#">SMART-WATCH</a></ScrollToTopLink>
      
       <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" >
         <span className="navbar-toggler-icon"></span>
@@ -36,9 +44,13 @@ export const ShopHeader = () => {
         <div className="offcanvas-body">
           <ul className="navbar-nav justify-content-center flex-grow-1 pe-3">
 
+            <li className="nav-item">
+              <ScrollToTopLink to='/shop'><button className="nav-link btn"  href="#">Home</button></ScrollToTopLink>
+            </li>
+
             <li className="nav-item dropdown">
 
-              <button className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" >
+              <button className="nav-link dropdown-toggle btn" role="button" data-bs-toggle="dropdown" >
                 Products
               </button>
 
@@ -52,29 +64,44 @@ export const ShopHeader = () => {
                   <hr className="dropdown-divider w-75"/>
                 </li> */}
 
-                <li><button className="dropdown-item " href="#"> <IoWatch  className='fs-4 icon-color me-2' /> &nbsp; Smart Watches </button> </li>
+                <li>
+                  <ScrollToTopLink to="smart-watches">
+                   <button className="dropdown-item " href="SmartWatches"> <IoWatch  className='fs-4 icon-color me-2' /> &nbsp; Smart Watches </button>
+                  </ScrollToTopLink> 
+                </li>
                 <li>
                   <hr className="dropdown-divider w-75 mx-auto"/>
                 </li>
-                <li><button className="dropdown-item " href="#"> <IoHeadsetSharp  className='fs-4 icon-color me-2' /> &nbsp; Wireless TWS </button></li>
+                <li>
+                  <ScrollToTopLink to="wireless">
+                  <button className="dropdown-item " href="#"> <IoHeadsetSharp  className='fs-4 icon-color me-2' /> &nbsp; Wireless TWS </button></ScrollToTopLink>
+                </li>
                 <li>
                   <hr className="dropdown-divider w-75 mx-auto"/>
                 </li>
-                <li><button className="dropdown-item " href="#"><MdSpeaker className='fs-4 icon-color me-2' /> &nbsp; Sound bars</button></li>
+                <li>
+                  <ScrollToTopLink to='sound-bars'>
+                  <button className="dropdown-item " href="#"><MdSpeaker className='fs-4 icon-color me-2' /> &nbsp; Sound bars</button></ScrollToTopLink>
+                </li>
                 <li>
                   <hr className="dropdown-divider w-75 mx-auto"/>
                 </li>
-                <li><button className="dropdown-item " href="#"> <IoBagAddSharp className='fs-4 icon-color me-2' /> &nbsp; Accessories</button></li>
+                <li>
+                  <ScrollToTopLink to='accessories'>
+                  <button className="dropdown-item " href="#"> <IoBagAddSharp className='fs-4 icon-color me-2' /> &nbsp; Accessories</button></ScrollToTopLink>
+                </li>
               </ul>
 
             </li>
 
             <li className="nav-item">
-              <button className="nav-link "  href="#">Deals</button>
+              <OverlayTrigger trigger="hover" placement="bottom" overlay={popover}>
+                <button className="nav-link "  href="#">Deals</button>
+              </OverlayTrigger>                          
             </li>
 
             <li className="nav-item">
-              <button className="nav-link" href="#">More</button>
+              <button className="nav-link btn" href="#">More</button>
             </li>
           </ul>
 

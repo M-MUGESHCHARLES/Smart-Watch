@@ -1,10 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import ScrollToTopLink from './ScrollToTopLink';
 
 export default function BackButton() {
   return (
     <>
-    <Link to="/" > 
+    <ScrollToTopLink to="/" > 
       <div className="col-md-3 text-center header-buttons-div ">
         <button type="button" className="btn btn-secondary ms-5 me-3">
           <span className="Header-Button ps-2 pe-2 zoom-effect">
@@ -12,7 +13,7 @@ export default function BackButton() {
           </span>
         </button>
       </div>
-    </Link>
+    </ScrollToTopLink>
     </>
   );
 }

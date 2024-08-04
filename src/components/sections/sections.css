@@ -72,6 +72,12 @@
     transition: transform 0.3s ease-in-out;
 }
 
+#popover-basic {
+  border-color: #454545 ;
+  background-color: #d8d9da ;
+  color: #454545;
+}
+
 
 /* =============================================================================================== */
 /* ======================= 2 -  FOOTER SECTION */

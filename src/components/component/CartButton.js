@@ -1,14 +1,23 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+import { useShop } from '../pages/Shop/ShopContext';
+import ScrollToTopLink from './ScrollToTopLink';
 
 export const CartButton = () => {
+
+  const {cart} = useShop();
+  const totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
+
   return (
     <>
-      <button type="button" className="btn btn-secondary position-relative zoom-effect">
-        <i className="fa-solid fa-cart-shopping"></i>
-        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-          0<span class="visually-hidden">items</span>
-        </span>
-      </button>
+      <ScrollToTopLink to="cart">
+        <button type="button" className="btn btn-secondary position-relative zoom-effect">
+          <i className="fa-solid fa-cart-shopping"></i>
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            {totalItems}
+          </span>
+        </button>
+      </ScrollToTopLink>
     </>
   );
 }
